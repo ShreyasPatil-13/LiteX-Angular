@@ -1,0 +1,102 @@
+<div class="container my-md-3 z-3">
+    <div class="row py-md-3 mx-auto">
+
+        <div class="col-12 col-lg-6">
+            <div class=" placeholder-glow   mx-auto mb-3">
+                <span class="placeholder " style="width: 100%; height: 500px;"></span>
+            </div>
+        </div>
+
+        <div class="col-12 py-2 col-lg-6">
+            <h6 class="small text-body-tertiary fw-normal mb-2 text-uppercase" style="letter-spacing: 2px;">
+                {{shoeItem.brandName}}</h6>
+
+            <div class="row d-flex align-items-start">
+                <div class="col-md-8 col-12">
+                    <h5 class="card-title display-6 fw-semibold mb-1">{{shoeItem.productName}}</h5>
+
+                    <div class="d-flex align-items-center justify-content-start  mb-4">
+                        <div class="ratings ">
+                            <span class="star fs-5 text-warning">&#9733;</span>
+                            <span class="star fs-5 text-warning">&#9733;</span>
+                            <span class="star fs-5 text-warning">&#9733;</span>
+                            <span class="star fs-5 text-warning">&#9733;</span>
+                            <span class="star fs-5 text-warning">&#9734;</span>
+                        </div>
+                        <span class="text-body-secondary fs-6 ms-3 mt-1 border-start ps-3"> 4 Reviews</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h1 class="text-warning text-md-end text-start mb-3"> {{shoeItem.price | currency:'INR'}}</h1>
+                </div>
+            </div>
+
+            <div class="card-body align-content-center  border-bottom">
+                <p class="card-text text-body-secondary mb-4">
+                    {{shoeItem.description}}
+                </p>
+
+                <div class="d-flex align-items-center mb-4 flex-wrap">
+                    <div class="col-12 col-md-4">
+                        <span class="me-3 text-body-secondary">Color</span>
+                        <input type="radio" class="btn-check" name="colors" id="color-1" autocomplete="off" checked>
+                        <label class="btn btn-outline-dark border-2 border-dark me-1"
+                               style="height: 30px; width: 30px; border-radius: 50%;" for="color-1"></label>
+
+                        <input type="radio" class="btn-check" name="colors" id="color-2" autocomplete="off" checked>
+                        <label class="btn btn-outline-dark border-2  me-1 bg-secondary"
+                               style="height: 30px; width: 30px; border-radius: 50%;" for="color-2"></label>
+
+                        <input type="radio" class="btn-check" name="colors" id="color-3" autocomplete="off" checked>
+                        <label class="btn btn-outline-dark border-2  me-1 bg-warning"
+                               style="height: 30px; width: 30px; border-radius: 50%;" for="color-3"></label>
+                    </div>
+
+                    <div class="col-12 col-md-4 d-flex align-items-center my-2">
+                        <span class="ms-md-3 me-3 text-body-secondary">Size</span>
+                        <select class="form-select w-auto input" aria-label="Default select example">
+                            <option value="1">6 UK</option>
+                            <option value="2">7 UK</option>
+                            <option value="3">8 UK</option>
+                            <option value="3">9 UK</option>
+                            <option value="3">10 UK</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-4 d-flex align-items-center my-2">
+                        <span class="ms-md-3 me-3 text-body-secondary">Quantity</span>
+                        <select class="form-select w-auto input" aria-label="Default select example">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="3">4</option>
+                            <option value="3">5</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row my-3">
+                <div class="col">
+                    <button class="btn btn-warning btn-lg rounded-3 me-3">Buy Now</button>
+                    <button class="btn btn-outline-warning btn-lg rounded-3 ">Add to cart</button>
+                </div>
+                <button class="bg-body-tertiary d-flex align-items-center justify-content-center me-4"
+                        style="width: 45px; height: 45px; border-radius: 50%; border: 0;">
+                    <label class="wishlist-icon">
+                        <input type="checkbox">
+                        <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                  d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z">
+                            </path>
+                        </svg>
+                    </label>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,26 @@
+.logo {
+  font-size: 100px;
+}
+
+.bg-pattern {
+  background-color: #111827;
+  animation: patternAnimation 5s ease infinite;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%230F1623' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%230F1623' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.divider {
+  margin: 0 auto;
+  width: 50%;
+  height: 2px;
+  background-color: #ffc107;
+  background: linear-gradient(45deg, #111827, #ffc107, #111827);
+}
+@keyframes patternAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 80% 80%;
+  }
+}

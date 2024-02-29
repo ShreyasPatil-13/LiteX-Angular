@@ -1,0 +1,8 @@
+.shoe-card {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.shoe-card:hover {
+  cursor: pointer;
+  border: 1px solid rgba(255, 193, 7, 0.4);
+}

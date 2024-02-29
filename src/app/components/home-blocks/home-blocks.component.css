@@ -1,0 +1,16 @@
+.shoe-card {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.shoe-card:hover {
+  cursor: pointer;
+  border: 1px solid rgba(255, 193, 7, 0.4);
+}
+
+.divider {
+  margin: 0 auto;
+  width: 50%;
+  height: 2px;
+  background-color: #ffc107;
+  background: linear-gradient(45deg, #111827, #ffc107, #111827);
+}
