@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-blur position-sticky top-0 z-1">
-    <div class="container-fluid py-2 px-md-5">
+    <div class="container-fluid py-1 px-md-5">
         <a class="navbar-brand px-3 " href="#">
-            <i class="fa-solid fa-fire fs-1 text-warning me-3"></i>
-            <span class="fw-semibold fs-2 ">Lite<span class="text-warning">X</span></span>
+            <i class="fa-solid fa-fire fs-2 text-warning me-3"></i>
+            <span class="fw-semibold fs-2 ">Lite<span class="text-warning fw-bold">X</span></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,17 +16,21 @@
                        ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link link " routerLink="/products" routerLinkActive="active-link"
+                       ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }">Products</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link link" routerLink="/cart" routerLinkActive="active-link"
                        ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }">Cart</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link link" routerLink="/wishlist" routerLinkActive="active-link"
                        ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }">Wishlist</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link" routerLink="/orders" routerLinkActive="active-link"
                        ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }">Orders</a>
-                </li>
+                </li> -->
             </ul>
             <form class="d-flex p-2  rounded-3 justify-content-center" role="search">
                 <input class="form-control input" type="search" placeholder="Search" aria-label="Search">

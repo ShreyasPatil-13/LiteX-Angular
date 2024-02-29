@@ -2,31 +2,12 @@
   width: 300px;
   background-color: transparent;
 }
-/* .input {
-    border: 2px solid #ffc107;
-    width: 300px;
-    height: 2.5em;
-    padding-left: 0.8em;
-    outline: none;
-    overflow: hidden;
-    background-color: transparent;
-    border-radius: 10px;
-    transition: all 0.5s;
-  } */
 
 .input:hover,
 .input:focus {
   border: 1px solid rgba(255, 193, 7, 1);
   background-color: transparent;
   box-shadow: 0 0 20px rgba(255, 188, 3, 0.2);
-}
-
-.divider {
-  margin: 0 auto;
-  width: 50%;
-  height: 2px;
-  background-color: #ffc107;
-  background: linear-gradient(45deg, #111827, #ffc107, #111827);
 }
 
 .link {
@@ -66,4 +47,12 @@
 
 .active-link {
   color: var(--hovered-color);
+}
+
+.bg-body-tertiary {
+  background-color: #1a2131 !important;
+}
+
+.bg-body-secondary {
+  background-color: #232a39 !important;
 }

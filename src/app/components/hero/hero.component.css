@@ -4,9 +4,16 @@
 
 .bg-pattern {
   background-color: #111827;
-  animation: patternAnimation 5s ease infinite;
+  animation: patternAnimation 50s ease infinite;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url("../../../assets/img/shoes/bg-shoes.jpg");
+}
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%230F1623' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%230F1623' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+.bg-blur {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.2);
 }
 
 .divider {
@@ -14,13 +21,21 @@
   width: 50%;
   height: 2px;
   background-color: #ffc107;
-  background: linear-gradient(45deg, #111827, #ffc107, #111827);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0),
+    #ffc107,
+    rgba(0, 0, 0, 0)
+  );
 }
 @keyframes patternAnimation {
   0% {
-    background-position: 0% 0%;
+    background-position: 20% 20%;
+  }
+  50% {
+    background-position: 40% 40%;
   }
   100% {
-    background-position: 80% 80%;
+    background-position: 20% 20%;
   }
 }

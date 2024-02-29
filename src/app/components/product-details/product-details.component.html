@@ -2,8 +2,9 @@
     <div class="row py-md-3 mx-auto">
 
         <div class="col-12 col-lg-6">
-            <div class=" placeholder-glow   mx-auto mb-3">
-                <span class="placeholder " style="width: 100%; height: 500px;"></span>
+            <div class="mx-auto mb-3">
+                <img src={{shoeItem.image}} style="width: 100%; height: 500px;" class="img-fluid object-fit-cover"
+                     alt="image">
             </div>
         </div>
 
@@ -27,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <h1 class="text-warning text-md-end text-start mb-3"> {{shoeItem.price | currency:'INR'}}</h1>
                 </div>
             </div>

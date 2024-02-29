@@ -14,3 +14,11 @@
   background-color: #ffc107;
   background: linear-gradient(45deg, #111827, #ffc107, #111827);
 }
+
+.brand-card {
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
+}
+
+.bg-body-tertiary {
+  background-color: #1a2131 !important;
+}
